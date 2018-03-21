@@ -16,24 +16,26 @@ While successful, they want to always be one step ahead of fraudsters and have t
 The Data comes in CSV format as follows:
 
 File descriptions
-train.csv - the training set
-train_sample.csv - 100,000 randomly-selected rows of training data, to inspect data before downloading full set
-test.csv - the test set
-sampleSubmission.csv - a sample submission file in the correct format
+- train.csv - the training set
+- train_sample.csv - 100,000 randomly-selected rows of training data, to inspect data before downloading full set
+- test.csv - the test set
+- sampleSubmission.csv - a sample submission file in the correct format
+
 Data fields
 Each row of the training data contains a click record, with the following features.
 
-ip: ip address of click.
-app: app id for marketing.
-device: device type id of user mobile phone (e.g., iphone 6 plus, iphone 7, huawei mate 7, etc.)
-os: os version id of user mobile phone
-channel: channel id of mobile ad publisher
-click_time: timestamp of click (UTC)
-attributed_time: if user download the app for after clicking an ad, this is the time of the app download
-is_attributed: the target that is to be predicted, indicating the app was downloaded
+- ip: ip address of click.
+- app: app id for marketing.
+- device: device type id of user mobile phone (e.g., iphone 6 plus, iphone 7, huawei mate 7, etc.)
+- os: os version id of user mobile phone
+- channel: channel id of mobile ad publisher
+- click_time: timestamp of click (UTC)
+- attributed_time: if user download the app for after clicking an ad, this is the time of the app download
+- is_attributed: the target that is to be predicted, indicating the app was downloaded
+
 Note that ip, app, device, os, and channel are encoded.
 
 The test data is similar, with the following differences:
 
-click_id: reference for making predictions
-is_attributed: not included
+- click_id: reference for making predictions
+- is_attributed: not included
